@@ -1,259 +1,272 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="img/favicon.ico" sizes="32x32">
-    <title>Portfólio</title>
-  </head>
-  <body>
-    <nav class="floating-menu">
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfólio de Gabriella Barbieri, desenvolvedora front-end focada em UI, UX e experiências web performáticas." />
+  <meta name="theme-color" content="#111111" />
+  <meta property="og:title" content="Gabriella Barbieri | Portfólio Full Stack" />
+  <meta property="og:description"
+    content="Projetos ffull stack com foco em interfaces bonitas, funcionais e intuitivas." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" href="img/favicon.ico" sizes="32x32" />
+  <title>Gabriella Barbieri | Portfólio Full Stack</title>
+</head>
+<body>
+  <nav class="floating-menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#codigo">Código</a></li>
+    </ul>
+  </nav>
+  <header class="hero" id="inicio">
+    <img src="img/avatar.png" alt="Ilustração principal do portfólio de Gabriella" />
+  </header>
+
+  <section class="sobre" id="sobre">
+    <div class="sobre-texto sobre-esquerda">
+      <span class="sobre-kicker">Quem sou</span>
+      <p class="sobre-descricao">
+        Sou desenvolvedora Full Stack recém-formada em Análise e
+        Desenvolvimento de Sistemas, apaixonada por transformar ideias em
+        interfaces bonitas, funcionais e intuitivas. Estou em constante
+        aprendizado, explorando novas tecnologias e boas práticas todos os
+        dias, com foco em UI e UX.
+      </p>
+      <p class="sobre-descricao">
+        Gosto de criar experiências que façam sentido para as pessoas e
+        de evoluir a cada projeto, buscando sempre unir estética, usabilidade
+        e código bem feito.
+      </p>
+    </div>
+
+    <div class="sobre-centro">
+      <img src="img/avatardepé.png" alt="Ilustração de Gabriella em pé" loading="lazy" decoding="async" />
+    </div>
+
+    <div class="sobre-texto sobre-direita">
+      <h3>Como trabalho</h3>
+      <ul class="sobre-pilares" aria-label="Pilares profissionais">
+        <li>UI com identidade visual consistente</li>
+        <li>UX orientada a clareza e conversão</li>
+        <li>Código organizado e de fácil manutenção</li>
+        <li>Aprendizado contínuo e evolução constante</li>
       </ul>
-    </nav>
-    <header class="hero" id="inicio">
-      <img src="img/avatar.png" alt="Avatar do portfólio" />
-    </header>
+      <p class="sobre-assinatura">Gabriella Barbieri <br>Full Stack Developer</p>
+    </div>
+  </section>
 
-    <section class="sobre" id="sobre">
-      <div class="sobre-texto">
-        <h1>Sobre mim</h1>
-        <p>
-          Sou desenvolvedora front-end recém-formada em Análise e
-          Desenvolvimento de Sistemas, apaixonada por transformar ideias em
-          interfaces bonitas, funcionais e intuitivas. Estou em constante
-          aprendizado, explorando novas tecnologias e boas práticas todos os
-          dias, com foco em UI e UX. <br />
-          <br />Gosto de criar experiências que façam sentido para as pessoas e
-          de evoluir a cada projeto, buscando sempre unir estética, usabilidade
-          e código bem feito.
-        </p>
+  <section class="projetos" id="projetos">
+    <h2>Projetos</h2>
+    <p class="projetos-subtitulo">
+      Seleção de trabalhos com foco em experiência, resultado e qualidade técnica.
+    </p>
+
+    <div class="projetos-filtros" role="group" aria-label="Filtrar projetos">
+      <button class="filtro-btn ativo" type="button" data-filter="all" aria-pressed="true">Todos</button>
+      <button class="filtro-btn" type="button" data-filter="frontend" aria-pressed="false">Front-end</button>
+      <button class="filtro-btn" type="button" data-filter="backend" aria-pressed="false">Back-end</button>
+      <button class="filtro-btn" type="button" data-filter="sistemas" aria-pressed="false">Sistemas</button>
+      <button class="filtro-btn" type="button" data-filter="uiux" aria-pressed="false">UI/UX</button>
+    </div>
+
+    <div class="projetos-convite">
+      <a href="#contato" class="projetos-convite-btn">Quer ver seu site aqui?</a>
+    </div>
+
+    <div class="projetos-grid">
+      <article class="projeto-card" data-filtravel="true" data-category="frontend ux">
+        <div class="projeto-capa">
+          <img src="img/avatar.png" alt="Capa do projeto Associação Atlética Insano" loading="lazy" decoding="async" />
+
+          <div class="projeto-overlay">
+            <div class="projeto-links">
+              <a href="https://github.com/gabcbieri/A.A.A.T.I.---Associacao-Aletica-Academica-de-Tecnologia-da-Informacao-"
+                target="_blank" rel="noopener noreferrer">Ver código GitHub</a>
+              <a href="https://gabcbieri.github.io/A.A.A.T.I.---Associacao-Aletica-Academica-de-Tecnologia-da-Informacao-/"
+                target="_blank" rel="noopener noreferrer">Ver site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projeto-resumo">
+          <h3>Site A.A.A.T.I. Insano</h3>
+          <p>Landing institucional com identidade visual forte e navegação direta para comunicação e engajamento.</p>
+          <div class="projeto-tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Front-end</span>
+            <span>UI/UX</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="projeto-card" data-filtravel="true" data-category="frontend sistema">
+        <div class="projeto-capa">
+          <img src="img/projetoinsano.png" alt="Capa do sistema Insano" loading="lazy" decoding="async" />
+
+          <div class="projeto-overlay">
+            <div class="projeto-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Ver código GitHub</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Ver site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projeto-resumo">
+          <h3>Sistema Acadêmico Insano</h3>
+          <p>Painel web para centralizar informações e facilitar o acesso rápido de alunos às funcionalidades
+            principais.</p>
+          <div class="projeto-tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>Front-end</span>
+            <span>Back-end</span>
+            <span>Sistemas</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="projeto-card" data-filtravel="true" data-category="ux frontend">
+        <div class="projeto-capa">
+          <img src="img/avatar.png" alt="Capa do projeto de interface responsiva" loading="lazy" decoding="async" />
+
+          <div class="projeto-overlay">
+            <div class="projeto-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Ver código GitHub</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Ver site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projeto-resumo">
+          <h3>Projeto UI Responsiva</h3>
+          <p>Interface pensada para legibilidade e usabilidade em múltiplos dispositivos, com foco em fluidez visual.
+          </p>
+          <div class="projeto-tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Front-end</span>
+            <span>UI/UX</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="projeto-card" data-filtravel="true" data-category="frontend ux">
+        <div class="projeto-capa">
+          <img src="img/avatar.png" alt="Capa do projeto de experiência digital" loading="lazy" decoding="async" />
+
+          <div class="projeto-overlay">
+            <div class="projeto-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Ver código GitHub</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Ver site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projeto-resumo">
+          <h3>Experiência Web Interativa</h3>
+          <p>Projeto focado em interações leves, hierarquia clara de conteúdo e navegação intuitiva de ponta a ponta.
+          </p>
+          <div class="projeto-tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Front-end</span>
+            <span>UI/UX</span>
+          </div>
+        </div>
+      </article>
+
+      <button class="ver-todos" id="verTodosBtn">Ver todos</button>
+    </div>
+  </section>
+  
+  <section class="contato" id="contato">
+    <div class="contato-container">
+      <h2>Vamos conversar sobre o seu projeto?</h2>
+
+      <p class="contato-intro">
+        Se você quer construir algo bonito, funcional e com personalidade, estou aberta para novos projetos,
+        parcerias e oportunidades. Gosto de relações próximas, comunicação clara e entregas com cuidado de ponta a ponta.
+      </p>
+
+      <div class="contato-meta" aria-label="Detalhes de contato">
+        <span>Resposta em até 24h</span>
+        <span>Disponível para freelance e oportunidades fixas</span>
       </div>
-      <img src="img/avatardepé.png" alt="Avatar em pé" />
-    </section>
 
-    <section class="projetos" id="projetos">
-      <h2>Projetos</h2>
+      <div class="contato-botoes">
+        <a href="https://wa.me/5541997231866" target="_blank" rel="noopener noreferrer" class="contato-btn contato-btn-destaque"> <i
+            class="fa-brands fa-whatsapp"></i> WhatsApp</a>
 
-      <div class="projetos-grid">
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
+        <a href="https://instagram.com/gabrielladevw" target="_blank" rel="noopener noreferrer" class="contato-btn"> <i
+            class="fa-brands fa-instagram"></i> Instagram</a>
 
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
+        <a href="mailto:gabriellacbarbieri@gmail.com" class="contato-btn"> <i class="fa-solid fa-envelope"></i> Email
+        </a>
 
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
-
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
-
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
-
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
-
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
-
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
-
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
-
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-        <article class="projeto-card">
-          <img src="img/avatar.png" alt="Capa do projeto" />
-
-          <div class="projeto-overlay">
-            <div class="projeto-tecnologias">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-
-            <details class="projeto-acoes">
-              <summary>Ver projeto</summary>
-
-              <div class="projeto-links">
-                <a href="#" target="_blank">Ver código GitHub</a>
-                <a href="#" target="_blank">Ver site</a>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <button class="ver-todos" id="verTodosBtn">Ver todos</button>
+        <a href="https://github.com/gabcbieri" target="_blank" rel="noopener noreferrer" class="contato-btn"> <i
+            class="fa-brands fa-github"></i> GitHub </a>
       </div>
-    </section>
+    </div>
+  </section>
+  <section class="codigo" id="codigo">
+    <div class="codigo-container">
+      <h2>Código do Portfólio</h2>
+      <p>
+        Projeto autoral focado em performance visual, clareza de navegação e experiência responsiva.
+        Estruturado para ser simples de manter e evoluir.
+      </p>
 
-    <section class="contato" id="contato">
-      <div class="contato-container">
-        <h2>Vamos conversar?</h2>
-
-        <p>
-          Quer tirar sua ideia do papel, criar algo bonito, funcional e com a
-          sua cara? Estou aberta a novos projetos, parcerias e oportunidades. Me
-          chama! vai ser um prazer conversar 😊
-        </p>
-
-        <div class="contato-botoes">
-          <a href="https://wa.me/5541997231866" target="_blank"class="contato-btn"> <i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-
-          <a href="https://instagram.com/gabrielladevw" target="_blank" class="contato-btn"> <i class="fa-brands fa-instagram"></i> Instagram</a>
-
-          <a href="mailto:gabriellacbarbieri@gmail.com" class="contato-btn"> <i class="fa-solid fa-envelope"></i> Email </a>
-
-          <a href="https://github.com/gabcbieri" target="_blank" class="contato-btn"> <i class="fa-brands fa-github"></i>  GitHub </a>
+      <div class="codigo-info-blocos">
+        <div>
+          <h4>Linguagens e stack</h4>
+          <ul class="codigo-lista">
+            <li>HTML semântico</li>
+            <li>CSS responsivo</li>
+            <li>JavaScript puro</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Funcionalidades</h4>
+          <ul class="codigo-lista">
+            <li>Filtro dinâmico de projetos</li>
+            <li>Animações ao rolar a página</li>
+            <li>Interação por toque no mobile</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <script src="script.js"></script>
-  </body>
+      <a class="codigo-github-btn" href="https://github.com/gabcbieri/Portfolio-" target="_blank" rel="noopener noreferrer">Ver código no GitHub</a>
+    </div>
+  </section>
+  <footer class="site-footer" id="footer">
+    <div class="site-footer-conteudo">
+      <div class="footer-rodape">
+        <p>© 2026 Gabriella Barbieri - Desenvolvedora Full Stack. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
+
+
+
+
+
+
+
