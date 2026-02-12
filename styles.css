@@ -543,6 +543,12 @@ button:focus-visible {
   background: #1f2430;
   color: #fff;
   font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.codigo-github-btn:hover{
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(31, 36, 48, 0.2);
 }
 
 .site-footer {
